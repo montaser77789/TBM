@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
+const cairo = Cairo({
+  subsets: ["arabic", "latin"],
+  variable: "--font-cairo",
   display: "swap",
 });
+
 export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
   description:
     "Connecting world-class destinations with the dynamic GCC travel market.",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} font-montserrat antialiased`}>
+      <body className={`${cairo.variable} font-cairo antialiased`}>
         {children}
       </body>
     </html>

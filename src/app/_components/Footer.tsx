@@ -12,6 +12,8 @@ const links = [
   { id: 4, title: "Services", url: "#services" },
   { id: 5, title: "Numbers Speak for Us", url: "#numbers" },
 ];
+import logo from "../../../public/favicon.png";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -19,10 +21,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Logo and Description */}
         <div>
-          <h3 className="text-2xl font-bold text-[#00cafc] mb-3">
-            T<span className="text-[#48b7d6]">D</span>
-            <span className="text-[#fcc300]">M</span>
-          </h3>
+          <Image
+            width={120}
+            height={300}
+            src={logo}
+            alt="Logo"
+            className=" mb-4"
+          />
           <p className="text-[#48b7d6] leading-relaxed">
             Your strategic partner in <br />
             unlocking GCC tourism growth
@@ -59,16 +64,39 @@ export default function Footer() {
           <h4 className="text-[#fcc300] font-semibold mb-4">Social Media</h4>
           <ul className="text-[#48b7d6] space-y-3">
             <li className="flex items-center gap-3">
-              <FaFacebookF /> Facebook
+              <FaFacebookF />
+              <a
+                href="https://www.facebook.com/thetbmanagement"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Facebook
+              </a>
             </li>
+
             <li className="flex items-center gap-3">
-              <FaInstagram /> Instagram
+              <FaInstagram />
+              <a
+                href="https://www.instagram.com/thetbmanagement"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Instagram 
+              </a>
             </li>
+
             <li className="flex items-center gap-3">
-              <FaLinkedinIn /> Linkedin
-            </li>
-            <li className="flex items-center gap-3">
-              <FaXTwitter /> X
+              <FaXTwitter />
+              <a
+                href="https://x.com/thetbmanagement"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                X 
+              </a>
             </li>
           </ul>
         </div>

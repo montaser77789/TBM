@@ -16,7 +16,7 @@ export default function ContactUs() {
             <input
               className="bg-white rounded-[8px] text-[14px] px-3 py-4 max-w-xl focus:outline-none text-primary"
               type="text"
-              placeholder="Name......"
+              
               name="name"
             />
           </div>
@@ -27,7 +27,7 @@ export default function ContactUs() {
             <input
               className="bg-white rounded-[8px] text-[14px] px-3 py-4 max-w-xl focus:outline-none text-primary"
               type="text"
-              placeholder="Organization / Company Name......"
+              
               name="company"
             />
           </div>
@@ -38,7 +38,7 @@ export default function ContactUs() {
             <input
               className="bg-white rounded-[8px] text-[14px] px-3 py-4 max-w-xl focus:outline-none text-primary"
               type="email"
-              placeholder="mohamed15@gmail.com"
+              
               name="email"
             />
           </div>
@@ -49,7 +49,7 @@ export default function ContactUs() {
             <input
               className="bg-white rounded-[8px] text-[14px] px-3 py-4 max-w-xl focus:outline-none text-primary"
               type="tel"
-              placeholder="0120457890460"
+              
               name="Phone"
             />
           </div>
@@ -60,7 +60,7 @@ export default function ContactUs() {
             <textarea
               className="bg-white rounded-[8px] text-[14px] px-3 py-4 max-w-xl focus:outline-none text-primary"
               rows={6}
-              placeholder="You can write whatever you want....."
+              
               name="subject"
             />
           </div>

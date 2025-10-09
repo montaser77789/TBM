@@ -5,7 +5,7 @@ import bgHeroSection from "../../../public/assets/futuristic-landscape-dubai.jpg
 const HeroSection = () => {
   return (
     <section
-    id="home"
+      id="home"
       className="relative w-full h-[600px] md:h-screen flex items-center justify-center overflow-hidden"
       style={{
         background:
@@ -39,18 +39,11 @@ const HeroSection = () => {
               we are your strategic partners
             </span>
           </h1>
-
-          <p className="text-sm sm:text-base md:text-lg max-w-2xl mx-auto md:mx-0 mb-8">
-            Dedicated to building sustainable relationships based on trust,
-            transparency, and a shared passion for promoting world-class travel
-            across the GCC.
-          </p>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               className="inline-block px-6 py-3 rounded-lg text-black font-semibold shadow hover:shadow-lg transition"
               style={{ backgroundColor: "var(--color-secondary)" }}
-              href="#services"
+              href="#contact"
             >
               Get Started
             </a>
