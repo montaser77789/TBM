@@ -10,10 +10,9 @@ const Header = () => {
   const links = [
     { id: 1, title: "Home", url: "#home" },
     { id: 2, title: "About", url: "#about" },
-    { id: 3, title: "Roadmap", url: "#roadmap" },
-    { id: 4, title: "History", url: "#history" },
-    { id: 5, title: "Buy Widget", url: "#buy-widget" },
-    { id: 6, title: "Contact", url: "#footer" },
+    { id: 3, title: "Vision", url: "#vision" },
+    { id: 4, title: "Services", url: "#services" },
+    { id: 5, title: "Numbers Speak for Us", url: "#numbers" },
   ];
 
   return (
@@ -29,7 +28,7 @@ const Header = () => {
           {links.map((link) => (
             <li
               key={link.id}
-              className="text-white font-semibold text-lg hover:text-[#FFD700] transition duration-300"
+              className="text-white text-nowrap font-semibold text-lg hover:text-[#FFD700] transition duration-300"
             >
               <a href={link.url}>{link.title}</a>
             </li>
@@ -39,10 +38,9 @@ const Header = () => {
         {/* ========= Button ========= */}
         <div className="hidden md:block">
           <a
-            href="https://wa.me/966558159855?text=السلام%20عليكم%20ورحمة%20الله%20وبركاته%0Aأرغب%20بمعرفة%20المزيد%20عن%20الفرصة%20الاستثمارية،%20وكيفية%20الشراكة"
-            target="_blank"
+            href="#contact"
             rel="noopener noreferrer"
-            className="bg-primary text-black font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition"
+            className="bg-primary text-nowrap text-black font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition"
           >
             Contact Us
           </a>
@@ -79,12 +77,8 @@ const Header = () => {
                   </a>
                 </li>
               ))}
-              <a
-                href="https://wa.me/966558159855?text=السلام%20عليكم%20ورحمة%20الله%20وبركاته%0Aأرغب%20بمعرفة%20المزيد%20عن%20الفرصة%20الاستثمارية،%20وكيفية%20الشراكة"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className="bg-primary text-black font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition">
+              <a href="#contact" rel="noopener noreferrer">
+                <button className="bg-primary text-nowrap text-black font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition">
                   Contact Us
                 </button>
               </a>

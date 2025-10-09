@@ -5,6 +5,7 @@ import bgHeroSection from "../../../public/assets/futuristic-landscape-dubai.jpg
 const HeroSection = () => {
   return (
     <section
+    id="home"
       className="relative w-full h-[600px] md:h-screen flex items-center justify-center overflow-hidden"
       style={{
         background:

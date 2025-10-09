@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
-  title: "TBM | Travel Business Marketing",
+  title: "TBM | Destinations Marketing Management",
   description:
     "Connecting world-class destinations with the dynamic GCC travel market.",
 };
