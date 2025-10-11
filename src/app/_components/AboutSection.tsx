@@ -86,7 +86,7 @@ const AboutSection = () => {
         {/* ===== النصوص والبطاقات ===== */}
         <div>
           <h3 className="font-medium text-2xl sm:text-3xl md:text-[32px] text-text leading-snug">
-            The power of connections and content localization .
+            The power of connections and content localization.
           </h3>
 
           <p className="text-base sm:text-lg md:text-2xl mt-3 leading-relaxed text-gray-700">

@@ -19,7 +19,7 @@ import PartnerImage from "../../../public/OurIntegrated/PartnerImage.png";
 const cards = [
   {
     id: 1,
-    title: "Market Intelligence & Data Access",
+    title: "Market Intelligence and Data Access",
     image: MarketImage,
   },
   {
