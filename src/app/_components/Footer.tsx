@@ -55,7 +55,7 @@ export default function Footer() {
           <h4 className="text-[#fcc300] font-semibold mb-4">Contact Info</h4>
           <ul className="text-[#48b7d6] space-y-2">
             <li>info@tourismboardsmanagement.com</li>
-            <li>+20 111 222 3333</li> {/* ← استبدل الرقم لما تبعته */}
+            <li>+966 506854941</li> {/* ← استبدل الرقم لما تبعته */}
             <li>Mon–Fri: 9:00 AM – 6:00 PM</li>
           </ul>
         </div>
