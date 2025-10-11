@@ -10,21 +10,22 @@ const Drives = [
     backGroundImage: ourVision,
     title: "Our Vision",
     description:
-      "To be the indispensable bridge connecting the world's leading tourism destinations with the dynamic travel market of the GCC, fostering a new era of collaborative growth and unparalleled travel experiences.",
+      "To be the essential link connecting global tourism destinations with the vibrant GCC travel market, creating new paths of collaboration, innovation, and unforgettable travel experiences.",
   },
   {
     id: 2,
     backGroundImage: ourMision,
     title: "Our Mission",
     description:
-      "To empower tourism boards by providing streamlined access to a qualified and extensive network of GCC partners. We facilitate strategic, mutually beneficial agreements that enhance destination visibility, drive tangible sales growth, and equip local agents with the knowledge they need to succeed.",
+      "To empower tourism boards with direct access to trusted GCC partners, fostering strategic collaborations that boost visibility and drive growth.",
   },
+
   {
     id: 3,
     backGroundImage: ourValues,
     title: "Our Values",
     description:
-      "Partnerships, Transparency, Integrity, Global Insights, Local Expertise, Excellence, and Cultural Fluency",
+      "Integrity, transparency, and partnership guided by global perspective, local expertise, cultural awareness, and a commitment to excellence in every collaboration we create.",
   },
 ];
 

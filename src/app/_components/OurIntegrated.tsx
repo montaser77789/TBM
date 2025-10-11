@@ -9,8 +9,8 @@ import "swiper/css/pagination";
 
 import MarketImage from "../../../public/OurIntegrated/aa597124f321c15f98ce22ea6e157db626ffbed2.jpg";
 import inDesignImage from "../../../public/OurIntegrated/77ad44ce13796c11cf75d2dd964d3c8bec9ae10e.jpg";
-import MediaImage from "../../../public/OurIntegrated/0e4a70c8d5582ae94e4af52056e5ba3063c01686.jpg";
-import PerformanceImage from "../../../public/OurIntegrated/5c6f1f08ac4473e047a9bad3f6c469aa46afb9be.jpg";
+import MediaImage from "../../../public/OurIntegrated/promtion.png";
+import PerformanceImage from "../../../public/OurIntegrated/Mediaplans.png";
 import PerformanceImage2 from "../../../public/OurIntegrated/f41b05f22496c7eeb7d1962624b23ae0b544efe2.jpg";
 import FamImage from "../../../public/OurIntegrated/31ffef62c275b398b49b178c833a5fad869edf83.jpg";
 import Tripod from "../../../public/OurIntegrated/Tripod.jpg";
@@ -29,7 +29,7 @@ const cards = [
   },
   {
     id: 3,
-    title: "Strategic Partner Identification & Vetting",
+    title: "Partners Evaluation & Vetting",
     image: PartnerImage,
   },
   {
@@ -63,8 +63,6 @@ const cards = [
     image: FamImage,
   },
 ];
-;
-
 export default function OurIntegrated() {
   return (
     <section id="services" className="py-16 bg-white">
@@ -102,15 +100,25 @@ export default function OurIntegrated() {
         >
           {cards.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="bg-[#F5F5F5] rounded-[32px]  p-[16px] shadow-md hover:shadow-xl transition">
-                <div className="bg-[#FFFFFF]  rounded-[16px] p-[8px]">
+              <div className="bg-[#F5F5F5] rounded-[32px] p-[16px] shadow-md hover:shadow-xl transition h-full flex flex-col">
+                <div className="bg-[#FFFFFF] rounded-[16px] p-[8px] flex flex-col h-full">
                   <Image
                     src={item.image}
                     alt={item.title}
                     className="w-full h-[280px] object-cover rounded-[8px]"
                   />
-                  <h3 className="font-semibold text-[20px] md:text-[24px] text-[#4dc2f1] mt-4 text-center">
-                    {item.title}
+                  <h3 className="font-semibold text-[20px] md:text-[24px] text-[#4dc2f1] mt-4 text-center leading-snug flex-1 flex items-center justify-center">
+                    {item.title.split(" ").length === 2 ||
+                    item.title.split(" ").length === 3 ? (
+                      <>
+                        {item.title.split(" ")[0]} <br />{" "}
+                        {item.title.split(" ")[1] +
+                          " " +
+                          item.title.split(" ")[2]}
+                      </>
+                    ) : (
+                      item.title
+                    )}
                   </h3>
                 </div>
               </div>

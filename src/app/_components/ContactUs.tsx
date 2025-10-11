@@ -61,8 +61,8 @@ export default function ContactUs() {
           {["name", "company", "email", "Phone"].map((field) => (
             <div key={field} className="flex flex-col gap-2 mb-4">
               <label className="font-bold text-white text-[14px] capitalize">
-                {field === "company"
-                  ? "Organization / Company Name"
+                {field === "Organization"
+                  ? "Organization / Tourism Board"
                   : field.charAt(0).toUpperCase() + field.slice(1)}
               </label>
               <input

@@ -19,8 +19,8 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D2D2D] text-white py-12 px-6 sm:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+    <footer className="bg-[#2D2D2D] text-white py-12 containe">
+      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10">
         {/* Logo and Description */}
         <div>
           <Image
