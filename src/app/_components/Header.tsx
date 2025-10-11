@@ -4,15 +4,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../../public/favicon.png";
 import Image from "next/image";
+import Link from "next/link";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const links = [
     { id: 1, title: "Home", url: "#home" },
-    { id: 2, title: "About", url: "#about" },
-    { id: 3, title: "Vision", url: "#vision" },
-    { id: 4, title: "Services", url: "#services" },
-    { id: 5, title: "Our Expertise", url: "#numbers" },
+    { id: 2, title: "About Us", url: "#about" },
+    { id: 3, title: "Culture", url: "#vision" },
+    { id: 4, title: "TBM Consultants", url: "#advisory" },
+    { id: 5, title: "Services", url: "#services" },
+    { id: 6, title: "Expertise", url: "#numbers" },
   ];
 
   return (
@@ -72,9 +74,10 @@ const Header = () => {
                   key={link.id}
                   className="text-white font-semibold text-lg hover:text-[#FFD700] transition"
                 >
-                  <a href={link.url} onClick={() => setIsOpen(false)}>
+                  <Link href={link.url} onClick={() => setIsOpen(false)}>
+                    {" "}
                     {link.title}
-                  </a>
+                  </Link>
                 </li>
               ))}
               <a href="#contact" rel="noopener noreferrer">
