@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import ourVision from "../../../public/vision/260062cf77def51622a0196efb6297b037bc7889.jpg";
-import ourMision from "../../../public/vision/5037fd44a7c4e954f86f6ac6a95a70a178fb4f0f.jpg";
-import ourValues from "../../../public/vision/c7c5856a79ac998aed4df298a2bea721e823edf5.jpg";
+import ourVision from "../../../public/vision/Gemini_Generated_Image_6iw6ee6iw6ee6iw6 (1).png";
+import ourMision from "../../../public/vision/Gemini_Generated_Image_6iw6ee6iw6ee6iw6 (2).png";
+import ourValues from "../../../public/vision/Gemini_Generated_Image_6iw6ee6iw6ee6iw6.png";
 
 const Drives = [
   {
@@ -10,21 +10,21 @@ const Drives = [
     backGroundImage: ourVision,
     title: "Our Vision",
     description:
-      "To be the bridge connecting global destinations with the GCC for growth and exceptional experiences.",
+      "To be the indispensable bridge connecting the world's leading tourism destinations with the dynamic travel market of the GCC, fostering a new era of collaborative growth and unparalleled travel experiences.",
   },
   {
     id: 2,
     backGroundImage: ourMision,
     title: "Our Mission",
     description:
-      "We empower tourism boards with access to trusted GCC partners, driving growth and visibility.",
+      "To empower tourism boards by providing streamlined access to a qualified and extensive network of GCC partners. We facilitate strategic, mutually beneficial agreements that enhance destination visibility, drive tangible sales growth, and equip local agents with the knowledge they need to succeed.",
   },
   {
     id: 3,
     backGroundImage: ourValues,
     title: "Our Values",
     description:
-      "Trust. Transparency. Collaboration. Building lasting partnerships that drive real impact.",
+      "Partnerships, Transparency, Integrity, Global Insights, Local Expertise, Excellence, and Cultural Fluency",
   },
 ];
 

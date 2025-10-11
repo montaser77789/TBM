@@ -1,4 +1,5 @@
 import AboutSection from "./_components/AboutSection";
+import BoardOfAdvisory from "./_components/BoardOfAdvisory";
 import ContactUs from "./_components/ContactUs";
 import Footer from "./_components/Footer";
 import HaveAquestion from "./_components/HaveAquestion";
@@ -15,6 +16,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <OurVision />
+      <BoardOfAdvisory />
       <OurIntegrated />
       <OurNumbers />
       <HaveAquestion />

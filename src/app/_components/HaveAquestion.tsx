@@ -13,14 +13,9 @@ function HaveAquestion() {
       >
         <div className="absolute  w-full  text-center">
           <h2 className="font-bold text-[32px] md:text-[50px] text-wrap md:text-nowrap text-center mb-12 text-primary">
-            Have a Question? We’re Here to Help
+            Your Journey to the GCC Starts Here.
           </h2>
-          <a
-            href="contact"
-            className="  m-auto rounded-2xl text-center  text-white bg-primary py-3 px-6"
-          >
-            Contact Us
-          </a>
+
         </div>
       </div>
     </section>

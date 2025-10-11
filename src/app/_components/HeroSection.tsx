@@ -34,10 +34,7 @@ const HeroSection = () => {
         {/* ===== النصوص على اليسار ===== */}
         <div className="w-full md:w-1/2 text-white text-center md:text-left order-1 md:order-none">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-            We are more than facilitators —{" "}
-            <span style={{ color: "var(--color-primary)" }}>
-              we are your strategic partners
-            </span>
+             Your Direct Pathway to the GCC Travel Market
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a

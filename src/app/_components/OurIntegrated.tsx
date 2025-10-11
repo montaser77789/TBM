@@ -13,7 +13,9 @@ import MediaImage from "../../../public/OurIntegrated/0e4a70c8d5582ae94e4af52056
 import PerformanceImage from "../../../public/OurIntegrated/5c6f1f08ac4473e047a9bad3f6c469aa46afb9be.jpg";
 import PerformanceImage2 from "../../../public/OurIntegrated/f41b05f22496c7eeb7d1962624b23ae0b544efe2.jpg";
 import FamImage from "../../../public/OurIntegrated/31ffef62c275b398b49b178c833a5fad869edf83.jpg";
-
+import Tripod from "../../../public/OurIntegrated/Tripod.jpg";
+import Influencers from "../../../public/OurIntegrated/Influencers.jpg";
+import PartnerImage from "../../../public/OurIntegrated/PartnerImage.png";
 const cards = [
   {
     id: 1,
@@ -22,30 +24,46 @@ const cards = [
   },
   {
     id: 2,
-    title: "In-Destination Research & Surveys",
+    title: "On-ground surveys",
     image: inDesignImage,
   },
   {
     id: 3,
-    title: "Media Plans & Campaign Management",
-    image: MediaImage,
+    title: "Strategic Partner Identification & Vetting",
+    image: PartnerImage,
   },
   {
     id: 4,
-    title: "Performance Audits & Reporting",
+    title: "Media Plans Preparation",
     image: PerformanceImage,
   },
   {
     id: 5,
-    title: "Performance Audits & Reporting",
-    image: PerformanceImage2,
+    title: "Campaign & Promotion Monitoring",
+    image: MediaImage,
   },
   {
     id: 6,
-    title: "Influencer Campaigns & FAM Trips",
+    title: "Audit and performance reporting",
+    image: PerformanceImage2,
+  },
+  {
+    id: 7,
+    title: "Tripod partnerships with corporations",
+    image: Tripod,
+  },
+  {
+    id: 8,
+    title: "Roadshows, and Networking Events",
+    image: Influencers,
+  },
+  {
+    id: 9,
+    title: "FAM Trips, and Influencers Marketing",
     image: FamImage,
   },
 ];
+;
 
 export default function OurIntegrated() {
   return (
@@ -84,8 +102,8 @@ export default function OurIntegrated() {
         >
           {cards.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="bg-[#F5F5F5] rounded-[32px] p-[16px] shadow-md hover:shadow-xl transition">
-                <div className="bg-[#FFFFFF] rounded-[16px] p-[8px]">
+              <div className="bg-[#F5F5F5] rounded-[32px]  p-[16px] shadow-md hover:shadow-xl transition">
+                <div className="bg-[#FFFFFF]  rounded-[16px] p-[8px]">
                   <Image
                     src={item.image}
                     alt={item.title}

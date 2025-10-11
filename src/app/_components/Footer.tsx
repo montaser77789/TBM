@@ -5,15 +5,17 @@ import {
   FaLinkedinIn,
   FaXTwitter,
 } from "react-icons/fa6";
+import logo from "../../../public/favicon.png";
+import Image from "next/image";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
 const links = [
   { id: 1, title: "Home", url: "#home" },
   { id: 2, title: "About", url: "#about" },
   { id: 3, title: "Vision", url: "#vision" },
   { id: 4, title: "Services", url: "#services" },
-  { id: 5, title: "Numbers Speak for Us", url: "#numbers" },
+  { id: 5, title: "Our Expertise", url: "#numbers" },
 ];
-import logo from "../../../public/favicon.png";
-import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -26,7 +28,7 @@ export default function Footer() {
             height={300}
             src={logo}
             alt="Logo"
-            className=" mb-4"
+            className="mb-4"
           />
           <p className="text-[#48b7d6] leading-relaxed">
             Your strategic partner in <br />
@@ -49,13 +51,28 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div className="">
           <h4 className="text-[#fcc300] font-semibold mb-4">Contact Info</h4>
           <ul className="text-[#48b7d6] space-y-2">
-            <li>12 El-Maadi Street, Cairo, Egypt</li>
-            <li>hello@uxified.studio</li>
-            <li>+20 111 222 3333</li>
+            <li>info@tourismboardsmanagement.com</li>
+            <li>+20 111 222 3333</li> {/* ← استبدل الرقم لما تبعته */}
             <li>Mon–Fri: 9:00 AM – 6:00 PM</li>
+          </ul>
+        </div>
+
+        {/* Offices */}
+        <div>
+          <h4 className="text-[#fcc300] font-semibold mb-4">Offices</h4>
+          <ul className="text-[#48b7d6] space-y-3">
+            <li className="flex items-center gap-2">
+              <FaMapMarkerAlt /> Riyadh
+            </li>
+            <li className="flex items-center gap-2">
+              <FaMapMarkerAlt /> Dubai
+            </li>
+            <li className="flex items-center gap-2">
+              <FaMapMarkerAlt /> Cairo
+            </li>
           </ul>
         </div>
 
@@ -83,7 +100,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                Instagram 
+                Instagram
               </a>
             </li>
 
@@ -95,7 +112,19 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="hover:underline"
               >
-                X 
+                Twitter
+              </a>
+            </li>
+
+            <li className="flex items-center gap-3">
+              <FaLinkedinIn />
+              <a
+                href="https://www.linkedin.com/company/tourism-boards-management/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                LinkedIn
               </a>
             </li>
           </ul>

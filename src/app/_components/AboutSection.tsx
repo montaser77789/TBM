@@ -17,7 +17,7 @@ const card = [
         />
       </svg>
     ),
-    title: "Connecting destinations with GCC travel",
+    title: "Connecting Destinations with GCC",
   },
 
   {
@@ -34,7 +34,7 @@ const card = [
         />
       </svg>
     ),
-    title: "Building trusted partnerships.",
+    title: "Building powerful partnerships",
   },
 
   {
@@ -51,7 +51,7 @@ const card = [
         />
       </svg>
     ),
-    title: "Driving world-class travel growth",
+    title: "Driving World Class Travel Growth",
   },
 
   {
@@ -71,7 +71,7 @@ const card = [
         </g>
       </svg>
     ),
-    title: "Representing destinations with excellence.",
+    title: "Representing Destinations with Excellence",
   },
 ];
 const AboutSection = () => {
@@ -86,12 +86,14 @@ const AboutSection = () => {
         {/* ===== النصوص والبطاقات ===== */}
         <div>
           <h3 className="font-medium text-2xl sm:text-3xl md:text-[32px] text-text leading-snug">
-            Your Gateway to GCC Tourism Growth.
+            The power of connections and content localization .
           </h3>
 
           <p className="text-base sm:text-lg md:text-2xl mt-3 leading-relaxed text-gray-700">
-            We connect global destinations with the GCC’s vibrant travel market
-            through insight, trust, and lasting partnerships.
+            Based in the heart of the region, we are more than just
+            facilitators; we are your strategic partners. With TBM, you gain not
+            just a service provider, but a dedicated extension of your team in
+            the GCC.
           </p>
 
           <div className="grid grid-cols-2 gap-4 mt-10">
