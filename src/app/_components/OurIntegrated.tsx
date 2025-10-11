@@ -19,17 +19,17 @@ import PartnerImage from "../../../public/OurIntegrated/PartnerImage.png";
 const cards = [
   {
     id: 1,
-    title: "Market Intelligence and Data Access",
+    title: "Market Intelligence, and Data Access",
     image: MarketImage,
   },
   {
     id: 2,
-    title: "On-ground surveys",
+    title: "On-ground surveys, and questionnaires",
     image: inDesignImage,
   },
   {
     id: 3,
-    title: "Partners Evaluation and Vetting",
+    title: "Partners Evaluation, and Deck Vetting",
     image: PartnerImage,
   },
   {
@@ -39,12 +39,12 @@ const cards = [
   },
   {
     id: 5,
-    title: "Campaign and Promotion Monitoring",
+    title: "Campaigns, and Promotions Monitoring",
     image: MediaImage,
   },
   {
     id: 6,
-    title: "Audit and performance reporting",
+    title: "Audit and performance Reporting",
     image: PerformanceImage2,
   },
   {
@@ -63,6 +63,7 @@ const cards = [
     image: FamImage,
   },
 ];
+
 export default function OurIntegrated() {
   return (
     <section id="services" className="py-16 bg-white">
