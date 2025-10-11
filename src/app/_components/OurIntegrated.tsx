@@ -29,7 +29,7 @@ const cards = [
   },
   {
     id: 3,
-    title: "Partners Evaluation & Vetting",
+    title: "Partners Evaluation and Vetting",
     image: PartnerImage,
   },
   {
@@ -39,7 +39,7 @@ const cards = [
   },
   {
     id: 5,
-    title: "Campaign & Promotion Monitoring",
+    title: "Campaign and Promotion Monitoring",
     image: MediaImage,
   },
   {

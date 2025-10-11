@@ -58,7 +58,7 @@ export default function ContactUs() {
             Contact Us
           </h2>
 
-          {["name", "company", "email", "Phone"].map((field) => (
+          {["name", "Organization / Tourism Board", "email", "Phone"].map((field) => (
             <div key={field} className="flex flex-col gap-2 mb-4">
               <label className="font-bold text-white text-[14px] capitalize">
                 {field === "Organization"
