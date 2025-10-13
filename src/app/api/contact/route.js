@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { name, company, email, Phone, subject } = body;
+    const { name, Tourism_Board, email, Phone, subject } = body;
 
     // إعداد النقل (SMTP Transport)
     const transporter = nodemailer.createTransport({
@@ -22,7 +22,7 @@ export async function POST(req) {
       html: `
         <h3>New Message from Contact Form</h3>
         <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Company:</strong> ${company}</p>
+        <p><strong>Tourism Board:</strong> ${Tourism_Board}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${Phone}</p>
         <p><strong>Message:</strong><br/>${subject}</p>

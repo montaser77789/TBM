@@ -130,6 +130,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+      <div className="border-t border-gray-600 mt-8 pt-6 text-center text-[#48b7d6] text-sm">
+        © {new Date().getFullYear()} Tourism Boards Management. All rights
+        reserved. <br />
+      </div>
     </footer>
   );
 }

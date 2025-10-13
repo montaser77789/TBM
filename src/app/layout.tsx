@@ -9,7 +9,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "TBM | GCC Destinations & Tourism Marketing Experts",
+  title: "Destinations Marketing Management",
   description:
     "TBM connects world-class destinations with the vibrant GCC travel market — delivering tailored marketing strategies, destination branding, and tourism promotion across the Gulf region.",
   icons: {
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
     title: "TBM | Connecting Global Destinations with GCC Travelers",
     description:
       "Your trusted partner for destination marketing and tourism promotion across the Gulf region.",
-    url: "https://yourdomain.com",
+    url: "https://tourismboardsmanagement.com",
     siteName: "TBM",
     images: [
       {
-        url: "/og-image.jpg", // ضع هنا صورة مناسبة تظهر عند مشاركة الرابط
+        url: "https://tourismboardsmanagement.com", // ضع هنا صورة مناسبة تظهر عند مشاركة الرابط
         width: 1200,
         height: 630,
         alt: "TBM - GCC Travel Market",
@@ -49,10 +49,9 @@ export const metadata: Metadata = {
     title: "TBM | GCC Destinations Marketing & Promotion",
     description:
       "Promoting global destinations across the GCC travel market with innovative marketing strategies.",
-    images: ["/og-image.jpg"],
+    images: ["https://tourismboardsmanagement.com/favicon.png"],
   },
 };
-
 
 export default function RootLayout({
   children,

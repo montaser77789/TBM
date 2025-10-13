@@ -18,7 +18,7 @@ function HaveAquestion() {
         {/* النص */}
         <div className="absolute w-full text-center z-10">
           <h2 className="font-bold text-[32px] md:text-[50px] text-wrap md:text-nowrap text-center mb-12 text-white">
-            You Plan with GCC travel market starts here.
+            Your plan to acquire the GCC travel market starts here
           </h2>
         </div>
       </div>
