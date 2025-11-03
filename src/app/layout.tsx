@@ -9,7 +9,7 @@ const cairo = Cairo({
 });
 
 export const metadata: Metadata = {
-  title: "Destinations Marketing Management",
+  title: "TBM",
   description:
     "TBM connects world-class destinations with the vibrant GCC travel market — delivering tailored marketing strategies, destination branding, and tourism promotion across the Gulf region.",
   icons: {

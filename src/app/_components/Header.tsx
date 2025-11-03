@@ -1,28 +1,63 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../../../public/favicon.png";
 import Image from "next/image";
 import Link from "next/link";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // const links = [
+  //   { id: 1, title: "Home", url: "#home" },
+  //   { id: 2, title: "About Us", url: "#about" },
+  //   { id: 3, title: "Culture", url: "#vision" },
+  //   { id: 4, title: "TBM Consultants", url: "#advisory" },
+  //   { id: 5, title: "Services", url: "#services" },
+  //   { id: 6, title: "Expertise", url: "#numbers" },
+  // ];
 
   const links = [
     { id: 1, title: "Home", url: "#home" },
-    { id: 2, title: "About Us", url: "#about" },
-    { id: 3, title: "Culture", url: "#vision" },
-    { id: 4, title: "TBM Consultants", url: "#advisory" },
-    { id: 5, title: "Services", url: "#services" },
-    { id: 6, title: "Expertise", url: "#numbers" },
+    { id: 2, title: "About", url: "#about" },
+    { id: 3, title: "Services", url: "#services" },
+    { id: 4, title: "Expertise", url: "#numbers" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-[1000]  backdrop-blur-md border-b border-primary py-3">
+    <header
+      className={`fixed top-0 left-0 right-0 z-[1000] border-b border-primary py-3 transition-all duration-500 ${
+        scrolled
+          ? "bg-[#0d0d0d]/90 shadow-lg"
+          : "bg-transparent backdrop-blur-md"
+      }`}
+    >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* ========= Logo Placeholder ========= */}
-        <div className="text-2xl font-extrabold text-primary tracking-wide">
-          <Image src={logo} alt="Logo" width={100} height={100} />
+        {/* ========= Logo ========= */}
+        <div className="flex items-center min-w-[80px] md:min-w-[100px]">
+          <Image
+            src={logo}
+            alt="Logo"
+            width={80}
+            height={80}
+            className="w-[60px] md:w-[80px] h-auto object-contain"
+            priority
+          />
         </div>
 
         {/* ========= Desktop Menu ========= */}
@@ -75,7 +110,6 @@ const Header = () => {
                   className="text-white font-semibold text-lg hover:text-[#FFD700] transition"
                 >
                   <Link href={link.url} onClick={() => setIsOpen(false)}>
-                    {" "}
                     {link.title}
                   </Link>
                 </li>

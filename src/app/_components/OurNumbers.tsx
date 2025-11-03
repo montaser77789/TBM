@@ -15,8 +15,8 @@ const card = [
         />
       </svg>
     ),
-    title: "GCC Markets Deep Regional Insights",
-    number: "+6",
+    title: "Successful Campaigns",
+    number: "67+",
   },
 
   {
@@ -33,8 +33,8 @@ const card = [
         />
       </svg>
     ),
-    title: "Years of Travel & Tourism Expertise",
-    number: "+20",
+    title: "Tourism Boards",
+    number: "12+",
   },
 
   {
@@ -51,15 +51,16 @@ const card = [
         />
       </svg>
     ),
-    title: "Partnerships Built Across the Industry",
-    number: "+100",
+    title: "Travelers Reached",
+    number: "1.4M+",
   },
 ];
+
 export default function OurNumbers() {
   return (
     <section
       id="numbers"
-      className="py-16 containe"
+      className="py-16"
       style={{
         background: "linear-gradient(135deg, #00cafc 0%, #fcc300 100%)",
       }}
@@ -70,55 +71,47 @@ export default function OurNumbers() {
         </h2>
       </div>
 
-      <div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 ">
-          {card.map((item, index) => {
-            // Check if it's the middle card
-            const isMiddle = index === 1;
-
-            return (
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-10 container mx-auto px-6">
+        {card.map((item, index) => {
+          const isMiddle = index === 1;
+          return (
+            <div
+              key={item.id}
+              className={`rounded-[16px] shadow-lg py-10 px-6 flex flex-col items-center text-center transition-all duration-300 transform hover:scale-105 ${
+                isMiddle ? "bg-[#00cafc] text-white" : "bg-white text-[#22677A]"
+              }`}
+            >
+              {/* Icon */}
               <div
-                key={item.id}
-                className={`rounded-[16px] shadow-lg py-10 px-6 flex flex-col items-center text-center transition-all duration-300 transform hover:scale-105
-                ${
+                className={`w-[60px] h-[60px] rounded-lg flex items-center justify-center mb-4 ${
                   isMiddle
-                    ? "bg-[#00cafc] text-white"
-                    : "bg-white text-[#22677A]"
+                    ? "bg-white text-[#00cafc]"
+                    : "bg-[#00cafc] text-white"
                 }`}
               >
-                {/* Icon Container */}
-                <div
-                  className={`w-[60px] h-[60px] rounded-lg flex items-center justify-center text-[28px] mb-4 transition
-                  ${
-                    isMiddle
-                      ? "bg-white text-[#00cafc]"
-                      : "bg-[#00cafc] text-white"
-                  }`}
-                >
-                  {item.icon}
-                </div>
-
-                {/* Number */}
-                <p
-                  className={`text-[36px] sm:text-[44px] md:text-[48px] font-bold leading-tight ${
-                    isMiddle ? "text-white" : "text-[#22677A]"
-                  }`}
-                >
-                  {item.number}
-                </p>
-
-                {/* Title */}
-                <p
-                  className={`mt-2 text-sm sm:text-base md:text-lg leading-snug px-2 ${
-                    isMiddle ? "text-white/90" : "text-[#22677A]"
-                  }`}
-                >
-                  {item.title}
-                </p>
+                {item.icon}
               </div>
-            );
-          })}
-        </div>
+
+              {/* Number */}
+              <p
+                className={`text-[36px] sm:text-[44px] md:text-[48px] font-bold leading-tight ${
+                  isMiddle ? "text-white" : "text-[#22677A]"
+                }`}
+              >
+                {item.number}
+              </p>
+
+              {/* Title */}
+              <p
+                className={`mt-2 text-sm sm:text-base md:text-lg leading-snug ${
+                  isMiddle ? "text-white/90" : "text-[#22677A]"
+                }`}
+              >
+                {item.title}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

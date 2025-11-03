@@ -1,6 +1,14 @@
 "use client";
 import Image from "next/image";
 import bgHeroSection from "../../../public/assets/futuristic-landscape-dubai.jpg"; // optional
+import bgHeroSection2 from "../../../public/assets/3d-cartoon-airplane-sky.jpg"; // optional
+import bgHeroSection3 from "../../../public/assets/Gemini_Generated_Image_jvwu63jvwu63jvwu.png"; // optional
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
+
+const slides = [bgHeroSection, bgHeroSection2 , bgHeroSection3];
 
 const HeroSection = () => {
   return (
@@ -14,19 +22,27 @@ const HeroSection = () => {
     >
       {/* خلفية الصورة + التدرج */}
       <div className="absolute inset-0 -z-10">
-        <Image
-          src={bgHeroSection}
-          alt="background"
-          className="w-full h-full object-cover"
-          priority
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(0,0,0,0.35), rgba(0,0,0,0.55))",
-          }}
-        />
+        <Swiper
+          modules={[Autoplay, EffectFade]}
+          effect="fade"
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          loop
+          className="absolute inset-0 -z-10"
+        >
+          {slides.map((src, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative w-full h-[600px] md:h-screen ">
+                <Image
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  priority={index === 0}
+                  className="object-cover h-[600px] md:h-screen "
+                />
+                <div className="absolute inset-0 bg-black/50" />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {/* المحتوى */}
@@ -34,7 +50,7 @@ const HeroSection = () => {
         {/* ===== النصوص على اليسار ===== */}
         <div className="w-full md:w-1/2 text-white text-center md:text-left order-1 md:order-none">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-             Your Direct Pathway to the GCC Travel Market
+            Your Direct Pathway to the GCC Travel Market
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a

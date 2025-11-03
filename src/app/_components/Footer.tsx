@@ -1,4 +1,3 @@
-// components/Footer.jsx
 import {
   FaFacebookF,
   FaInstagram,
@@ -19,8 +18,8 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2D2D2D] text-white py-12 containe">
-      <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10">
+    <footer className="bg-[#2D2D2D] text-white py-12">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-10 container px-6">
         {/* Logo and Description */}
         <div>
           <Image
@@ -51,12 +50,15 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="">
+        <div>
           <h4 className="text-[#fcc300] font-semibold mb-4">Contact Info</h4>
-          <ul className="text-[#48b7d6] space-y-2">
-            <li>info@tourismboardsmanagement.com</li>
-            <li>+966 506854941</li> {/* ← استبدل الرقم لما تبعته */}
-            <li>Mon–Fri: 9:00 AM – 6:00 PM</li>
+          <ul className="text-[#48b7d6] space-y-3">
+            <li className="break-all leading-snug">
+              info@<br />
+              tourismboardsmanagement.com
+            </li>
+            <li>+966 506854941</li>
+            {/* ⛔ تمت إزالة أوقات الدوام */}
           </ul>
         </div>
 
@@ -67,9 +69,7 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <FaMapMarkerAlt /> Riyadh
             </li>
-            <li className="flex items-center gap-2">
-              <FaMapMarkerAlt /> Dubai
-            </li>
+            {/* ❌ تمت إزالة مكتب دبي */}
             <li className="flex items-center gap-2">
               <FaMapMarkerAlt /> Cairo
             </li>
@@ -130,9 +130,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
+
       <div className="border-t border-gray-600 mt-8 pt-6 text-center text-[#48b7d6] text-sm">
         © {new Date().getFullYear()} Tourism Boards Management. All rights
-        reserved. <br />
+        reserved.
       </div>
     </footer>
   );
