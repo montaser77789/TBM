@@ -8,7 +8,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-const slides = [bgHeroSection, bgHeroSection2 , bgHeroSection3];
+const slides = [bgHeroSection, bgHeroSection2, bgHeroSection3];
 
 const HeroSection = () => {
   return (
@@ -37,6 +37,7 @@ const HeroSection = () => {
                   alt={`Slide ${index + 1}`}
                   priority={index === 0}
                   className="object-cover h-[600px] md:h-screen "
+                  fill
                 />
                 <div className="absolute inset-0 bg-black/50" />
               </div>
@@ -50,7 +51,7 @@ const HeroSection = () => {
         {/* ===== النصوص على اليسار ===== */}
         <div className="w-full md:w-1/2 text-white text-center md:text-left order-1 md:order-none">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-            Your Direct Pathway to the GCC Travel Market
+          Maximise the GCC tourists number to your destination.
           </h1>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a

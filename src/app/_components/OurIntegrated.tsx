@@ -66,7 +66,7 @@ const cards = [
 
 export default function OurIntegrated() {
   return (
-    <section id="services" className="py-16 bg-white">
+    <section id="services" className="py-16 bg-[#f8f8f8]">
       <div className="containe mx-auto px-6">
         {/* Header */}
         <div className="flex justify-between items-center mb-10">
@@ -108,7 +108,7 @@ export default function OurIntegrated() {
                     alt={item.title}
                     className="w-full h-[280px] object-cover rounded-[8px]"
                   />
-                  <h3 className="font-semibold text-[20px] md:text-[24px] text-[#4dc2f1] mt-4 text-center leading-snug flex-1 flex items-center justify-center">
+                  <h3 className="font-semibold text-[20px] md:text-[24px] text-text mt-4 text-center leading-snug flex-1 flex items-center justify-center">
                     {item.title.split(" ").length === 2 ||
                     item.title.split(" ").length === 3 ? (
                       <>
@@ -131,13 +131,13 @@ export default function OurIntegrated() {
       {/* Pagination color override */}
       <style jsx global>{`
         .swiper-pagination-bullet {
-          background-color: #fcc300;
+          background-color: #0445b7;
           opacity: 0.7;
           width: 12px;
           height: 12px;
         }
         .swiper-pagination-bullet-active {
-          background-color: #4dc2f1;
+          background-color: #0445b7;
           opacity: 1;
         }
       `}</style>

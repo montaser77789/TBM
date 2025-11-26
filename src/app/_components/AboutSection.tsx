@@ -100,7 +100,7 @@ const AboutSection = () => {
             {card.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center gap-4 text-black bg-text h-[160px] sm:h-[180px] md:h-[196px] rounded-[16px]"
+                className="flex items-center gap-4 text-white bg-text h-[160px] sm:h-[180px] md:h-[196px] rounded-[16px]"
               >
                 <div className="flex flex-col justify-center items-center gap-2 w-full px-2">
                   <div className="text-[18px] sm:text-[22px] md:text-[25px] w-[50px] sm:w-[55px] md:w-[60px] h-[50px] sm:h-[55px] md:h-[60px] rounded-full bg-secondary flex justify-center items-center">

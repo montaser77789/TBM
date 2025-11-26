@@ -61,7 +61,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact" className="bg-primary">
+    <section id="contact" className="bg-text">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <form onSubmit={handleSubmit} className="px-4 md:px-8 lg:px-16 py-16">
           <h2 className="font-bold text-[32px] md:text-[40px] text-center mb-12 text-white">

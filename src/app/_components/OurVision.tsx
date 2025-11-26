@@ -31,7 +31,7 @@ const Drives = [
 
 export default function OurVision() {
   return (
-    <section className="bg-[#4dc2f1] py-16" id="vision">
+    <section className="bg-text py-16" id="vision">
       <div className="containe ">
         <h2 className="font-bold text-[32px] md:text-[40px] text-center mb-12 text-white">
           What Drives TBM Forward

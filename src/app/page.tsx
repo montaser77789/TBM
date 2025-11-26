@@ -1,6 +1,7 @@
 import AboutSection from "./_components/AboutSection";
 import BoardOfAdvisory from "./_components/BoardOfAdvisory";
 import ContactUs from "./_components/ContactUs";
+import ExpertsLogosSlider from "./_components/ExpertsLogosSlider";
 import Footer from "./_components/Footer";
 import HaveAquestion from "./_components/HaveAquestion";
 import Header from "./_components/Header";
@@ -18,6 +19,7 @@ export default function Home() {
       <OurVision />
       {/* <BoardOfAdvisory /> */}
       <OurIntegrated />
+      <ExpertsLogosSlider />
       <OurNumbers />
       <HaveAquestion />
       <ContactUs />

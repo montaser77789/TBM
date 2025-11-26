@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../../public/favicon.png";
+import logo from "../../../public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -43,7 +43,7 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-[1000] border-b border-primary py-3 transition-all duration-500 ${
         scrolled
-          ? "bg-[#0d0d0d]/90 shadow-lg"
+          ? "bg-[#0d0d0d]/95   shadow-lg"
           : "bg-transparent backdrop-blur-md"
       }`}
     >
@@ -77,7 +77,7 @@ const Header = () => {
           <a
             href="#contact"
             rel="noopener noreferrer"
-            className="bg-primary text-nowrap text-black font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition"
+            className="bg-primary text-nowrap text-white font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition"
           >
             Contact Us
           </a>
@@ -115,7 +115,7 @@ const Header = () => {
                 </li>
               ))}
               <a href="#contact" rel="noopener noreferrer">
-                <button className="bg-primary text-nowrap text-black font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition">
+                <button className="bg-primary text-nowrap text-white font-bold py-2 px-6 rounded-xl hover:bg-[#FFD700] hover:text-black transition">
                   Contact Us
                 </button>
               </a>
